@@ -1,9 +1,18 @@
 #include <stdio.h>
 
+#define SIZE 6
 // SIZE라는 이름으로 정수 6을 나타내는 매크로 상수를 정의하세요
 
 int main(void)
 {
+	double score[]
+		= {89.3, 79.2, 84.83, 76.8, 92.52, 97.4};
+	double sum = 0;
+	for(int i=0; i<SIZE; i++)
+	{
+		sum += score[i];
+		printf("score[%d] = %.2f\n", i, score[i]);
+	}
 	//배열 score의 선언과 초기화
 	// 89.3, 79.2, 84.83, 76.8, 92.52, 97.4로 초기화된 double형 배열 score를 선언하세요
 	// 합계를 저장할 double형 변수 sum을 0으로 초기화하세요
